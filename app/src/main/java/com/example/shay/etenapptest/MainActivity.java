@@ -57,8 +57,8 @@ public class MainActivity extends Activity {
      */
     public void zoekGerecht (View v)
     {
-        Toast.makeText(getApplicationContext(),
-        "Dit werkt nog even niet.", Toast.LENGTH_LONG).show();
+        Intent z = new Intent(this, ZoekGerechten.class);
+        startActivity(z);
     }
 
     public void toonFavorieten(View v)
