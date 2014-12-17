@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.shay.etenapptest" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/start_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Activiteit die wordt gestart bij het openen van de app -->
+        <activity
+            android:name="com.example.shay.etenapptest.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Gerecht Toevoegen Activiteit -->
+        <activity
+            android:name="com.example.shay.etenapptest.AddGerecht"
+        />
+
+        <!-- Favorieten Tonen Activiteit -->
+        <activity
+            android:name="com.example.shay.etenapptest.ToonFavorieten"
+            />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App naam-->
+    <string name="app_name">Wat Eten We</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- eigen toegevoegde strings-->
+
+    <!--****************
+
+        Eerste Scherm
+
+    ********************-->
+    <string name="home_title">Wat Eten We?</string>
+
+    <!--buttons-->
+    <string name="gerecht_zoeken">GERECHT ZOEKEN</string>
+    <string name="gerecht_toevoegen">gerecht toevoegen</string>
+    <string name="toon_favorieten">toon favorieten</string>
+
+
+    <!--****************
+
+      Toon Favorieten Scherm
+
+   ********************-->
+    <string name="favorieten_title">Favoriete Gerechten</string>
+
+    <!--****************
+
+        Gerecht Toevoegen Scherm
+
+    ********************-->
+    <string name="gerecht_toevoegen_title">Nieuw gerecht toevoegen</string>
+    <string name="gerecht_toevoegen_ondertitel">Velden met een ster zijn verplicht</string>
+
+    <string name="gerecht_toevoegen_naam">Naam* &#160; &#160; &#160; &#160; &#160; &#160; Bijv. "Lasagne"</string>
+    <string name="gerecht_toevoegen_ingredient">Ingrediënt &#160; &#160; &#160; &#160; Bijv. "Gehakt"</string>
+    <string name="gerecht_toevoegen_omschrijving">Omschrijving &#160; &#160; Bijv. "Met extra kaas!"</string>
+
+    <string name="favorite_image">Image description: a star to favorite the dish</string>
+
+    <!--buttons-->
+    <string name="gerecht_toevoegen_categorie">Categorie toevoegen</string>
+    <string name="gerecht_toevoegen_favo">Toevoegen aan favorieten?</string>
+    <string name="gerecht_toevoegen_knop">Gerecht toevoegen</string>
+
+</resources>

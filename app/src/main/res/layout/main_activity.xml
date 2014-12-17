@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="#F44336"
+    android:id="@+id/beginscherm">
+
+    <!--text view aanmaken voor de titel-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/home_title"
+        android:id="@+id/home_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="45sp"
+    />
+
+    <!--button om gerecht te zoeken-->
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:text="@string/gerecht_zoeken"
+        android:id="@+id/gerecht_zoeken"
+        android:gravity="center"
+        android:layout_below="@+id/home_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:background="#FFBB33"
+        android:textStyle="bold"
+        android:onClick="zoekGerecht"
+    />
+
+    <!--gerecht toevoegen-->
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="@string/gerecht_toevoegen"
+        android:id="@+id/gerecht_toevoegen"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/gerecht_zoeken"
+        android:layout_alignLeft="@+id/gerecht_zoeken"
+        android:layout_alignStart="@+id/gerecht_zoeken"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="#1E2528"
+        android:onClick="addGerecht"
+    />
+
+    <!--toon favorieten-->
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="@string/toon_favorieten"
+        android:id="@+id/toon_favorieten"
+        android:layout_alignTop="@+id/gerecht_toevoegen"
+        android:layout_alignRight="@+id/gerecht_zoeken"
+        android:layout_alignEnd="@+id/gerecht_zoeken"
+        android:textAllCaps="false"
+        android:onClick="toonFavorieten"
+        android:textColor="#FFFFFF"
+        android:background="#1E2528"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F44336"
+    android:id="@+id/gerecht_toevoegen_scherm"
+>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gerecht_toevoegen_title"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+    />
+
+    <!-- "vakken met een ster zijn verplicht" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gerecht_toevoegen_ondertitel"
+        android:id="@+id/gerecht_toevoegen_ondertitel"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="95dp"
+        android:layout_centerHorizontal="true"
+    />
+
+    <!-- witte balk -->
+    <View android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        android:background="#FFFFFF"
+        android:layout_alignBottom="@+id/gerecht_toevoegen_ondertitel"
+        android:id="@+id/fillerbar"
+    />
+
+    <!-- naam input veld -->
+    <EditText
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/naamgerecht"
+        android:hint="@string/gerecht_toevoegen_naam"
+        android:layout_below="@+id/fillerbar"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:background="#FFFFFF"
+    />
+
+    <!-- ingrediënt input veld -->
+    <EditText
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/ingredientgerecht"
+        android:hint="@string/gerecht_toevoegen_ingredient"
+        android:layout_below="@+id/naamgerecht"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="5dp"
+    />
+
+    <!-- categorie input veld  -->
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:id="@+id/categorie_button"
+        android:layout_below="@+id/ingredientgerecht"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#FFFFFF"
+    />
+
+    <!-- categorie input veld -->
+    <EditText
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:id="@+id/omschrijvinggerecht"
+        android:hint="@string/gerecht_toevoegen_omschrijving"
+        android:layout_below="@id/categorie_button"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="5dp"
+    />
+
+    <!-- omschrijving input veld -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gerecht_toevoegen_favo"
+        android:layout_below="@id/omschrijvinggerecht"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="#1E2528"
+        android:id="@+id/favorieten_text"
+    />
+
+    <!-- favorieten icoon -->
+    <ImageButton
+        android:contentDescription="@string/favorite_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/favorieten_knop"
+        android:layout_toEndOf="@+id/favorieten_text"
+        android:layout_toRightOf="@+id/favorieten_text"
+        android:layout_below="@id/omschrijvinggerecht"
+        android:src="@drawable/favoriet_selector"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:onClick="addFavorite"
+        android:paddingEnd="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+    />
+
+    <!-- gerecht toevoegen knop -->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/gerecht_toevoegen_knop"
+        android:id="@+id/gerecht_toevoegen_knop"
+        android:layout_below="@id/favorieten_knop"
+        android:layout_marginTop="15dp"
+        android:background="#FFBB33"
+        android:textColor="#FFFFFF"
+        android:onClick="sendGerecht"
+        android:textSize="25sp"
+    />
+
+</RelativeLayout>
