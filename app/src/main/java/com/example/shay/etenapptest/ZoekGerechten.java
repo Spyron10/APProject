@@ -1,7 +1,9 @@
 package com.example.shay.etenapptest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 /**
  * Klasse die verantwoordelijk is voor het tonen van het scherm met drie opties:
@@ -14,5 +16,11 @@ public class ZoekGerechten extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zoek_gerechten);
+    }
+
+    public void shuffleSearch(View v)
+    {
+        Intent z = new Intent(this, ShufflePagina.class);
+        startActivity(z);
     }
 }

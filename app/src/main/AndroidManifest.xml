@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@drawable/start_icon"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
 
         <!-- Activiteit die wordt gestart bij het openen van de app -->
         <activity
@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
 
+
+
         <!-- Gerecht Toevoegen Activiteit -->
         <activity
             android:name="com.example.shay.etenapptest.AddGerecht"
@@ -29,9 +31,14 @@
             android:name="com.example.shay.etenapptest.ToonFavorieten"
         />
 
-        <!-- Favorieten Tonen Activiteit -->
+        <!-- Zoek Gerechten Activiteit -->
         <activity
             android:name="com.example.shay.etenapptest.ZoekGerechten"
+        />
+
+        <!-- Shuffle Pagina Activiteit -->
+        <activity
+            android:name="com.example.shay.etenapptest.ShufflePagina"
         />
 
     </application>
