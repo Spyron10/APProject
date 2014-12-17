@@ -23,6 +23,14 @@
 
     <!--****************
 
+        Gerecht Zoeken Scherm
+
+    ********************-->
+    <string name="zoekgerechten_title">Zoek Gerecht</string>
+
+
+    <!--****************
+
       Toon Favorieten Scherm
 
    ********************-->

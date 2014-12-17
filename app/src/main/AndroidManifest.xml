@@ -27,7 +27,12 @@
         <!-- Favorieten Tonen Activiteit -->
         <activity
             android:name="com.example.shay.etenapptest.ToonFavorieten"
-            />
+        />
+
+        <!-- Favorieten Tonen Activiteit -->
+        <activity
+            android:name="com.example.shay.etenapptest.ZoekGerechten"
+        />
 
     </application>
 
