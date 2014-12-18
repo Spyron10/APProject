@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 /**
  * Klasse die verantwoordelijk is voor het tonen van het scherm met drie opties:
@@ -22,5 +23,17 @@ public class ZoekGerechten extends Activity
     {
         Intent z = new Intent(this, ShufflePagina.class);
         startActivity(z);
+    }
+
+    public void zoekCategorie(View v)
+    {
+        Toast.makeText(getApplicationContext(),
+                "Zoeken op Categorie! (nog niet beschikbaar)", Toast.LENGTH_LONG).show();
+    }
+
+    public void zoekIngredient(View v)
+    {
+        Toast.makeText(getApplicationContext(),
+                "Zoeken op Ingrediënt! (nog niet beschikbaar)", Toast.LENGTH_LONG).show();
     }
 }

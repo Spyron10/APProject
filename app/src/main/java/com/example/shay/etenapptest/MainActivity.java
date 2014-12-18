@@ -46,6 +46,9 @@ public class MainActivity extends Activity {
         {
             db.execSQL("INSERT INTO Gerechten (naam,favoriet,omschrijving) VALUES ('Testgerecht','1','Dit is een testgerecht om functionaliteit te testen.')");
             db.execSQL("INSERT INTO Gerechten (naam,favoriet,omschrijving) VALUES ('Gerecht2','1','Dit is ook een testgerecht om functionaliteit te testen.')");
+            db.execSQL("INSERT INTO Gerechten (naam,favoriet,omschrijving) VALUES ('Gerecht3','1','Dit is ook een testgerecht om functionaliteit te testen.')");
+            db.execSQL("INSERT INTO Gerechten (naam,favoriet,omschrijving) VALUES ('Gerecht4','0','Dit is ook een testgerecht om functionaliteit te testen.')");
+            db.execSQL("INSERT INTO Gerechten (naam,favoriet,omschrijving) VALUES ('Gerecht5','1','Dit is ook een testgerecht om functionaliteit te testen.')");
         }
 
         db.close();

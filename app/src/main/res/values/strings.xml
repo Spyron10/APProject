@@ -27,7 +27,8 @@
 
     ********************-->
     <string name="zoekgerechten_title">Zoek Gerecht</string>
-
+    <string name="zoeken_op_categorie">Zoeken op categorie</string>
+    <string name="zoeken_op_ingredient">Zoeken op ingrediënt</string>
 
     <!--****************
 

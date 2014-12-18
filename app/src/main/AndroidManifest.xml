@@ -41,6 +41,11 @@
             android:name="com.example.shay.etenapptest.ShufflePagina"
         />
 
+        <!-- Detail Pagina Activiteit -->
+        <activity
+            android:name="com.example.shay.etenapptest.DetailPagina"
+            />
+
     </application>
 
 </manifest>

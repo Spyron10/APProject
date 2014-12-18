@@ -1,36 +1,41 @@
 package com.example.shay.etenapptest;
 
+import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.app.ListActivity;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import android.app.ListActivity;
+import android.widget.ArrayAdapter;
 
 /**
- * Class die de favorieten ophaalt en toont.
+ * Toont de details van het gerecht.
  */
-public class ToonFavorieten extends ListActivity
+public class DetailPagina extends ListActivity
 {
+
+    String gerechtnaam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.favorieten_scherm);
+        setContentView(R.layout.detail_pagina);
         ArrayList results = new ArrayList();
 
         SQLiteDatabase db = openOrCreateDatabase("EDB", MODE_PRIVATE, null);
 
-        Cursor cursor = db.rawQuery("SELECT * FROM Gerechten WHERE favoriet='1'", null);
+       gerechtnaam = getIntent().getExtras().getString("gerechtnaam");
+
+        Cursor cursor = db.rawQuery("SELECT * FROM Gerechten WHERE naam= '+ gerechtnaam +'", null);
         if(cursor.getCount() == 0)
         {
             // foutmelding plaatsen
             Toast.makeText(getApplicationContext(),
-                    "U heeft geen favorieten.", Toast.LENGTH_LONG).show();
+                    "Er is iets fout gegaan.", Toast.LENGTH_LONG).show();
         }
         else
         {
@@ -54,5 +59,4 @@ public class ToonFavorieten extends ListActivity
 
         this.setListAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, results));
     }
-
 }

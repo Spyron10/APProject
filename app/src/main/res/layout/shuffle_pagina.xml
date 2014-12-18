@@ -8,8 +8,8 @@
 
     <!--text view aanmaken voor de titel-->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/shuffle_result"
         android:layout_alignParentTop="true"
@@ -19,7 +19,16 @@
         android:textStyle="bold"
         android:textSize="45sp"
         android:gravity="center"
+
         />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/shuffle_result"
+        android:background="#FFFFFF"
+        android:onClick="toonDetails"
+    />
 
     <ImageButton
         android:layout_width="wrap_content"
