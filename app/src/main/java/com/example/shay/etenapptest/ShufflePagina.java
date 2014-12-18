@@ -59,12 +59,8 @@ public class ShufflePagina extends Activity
 
     public void toonDetails(View v)
     {
-        /*
         Intent i = new Intent(this, MainActivity.class);
         i.putExtra("gerechtnaam", gerechtnaam);
         startActivity(i);
-        */
-        Toast.makeText(getApplicationContext(),
-                "Er zitten geen gerechten in het systeem.", Toast.LENGTH_LONG).show();
     }
 }
