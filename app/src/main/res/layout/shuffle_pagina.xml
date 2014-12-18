@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     android:background="#F44336">
 
+
     <!--text view aanmaken voor de titel-->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/zoekgerechten_title"
-        android:id="@+id/zoekgerechten_title"
+        android:id="@+id/shuffle_result"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
@@ -19,7 +19,7 @@
         android:textStyle="bold"
         android:textSize="45sp"
         android:gravity="center"
-    />
+        />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -32,7 +32,6 @@
         android:background="@null"
         android:scaleType="fitCenter"
         android:onClick="shuffleSearch"
-    />
-
+        />
 
 </RelativeLayout>
