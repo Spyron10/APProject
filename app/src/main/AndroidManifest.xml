@@ -24,22 +24,22 @@
         <!-- Gerecht Toevoegen Activiteit -->
         <activity
             android:name="com.example.shay.etenapptest.AddGerecht"
-        />
+            />
 
         <!-- Favorieten Tonen Activiteit -->
         <activity
             android:name="com.example.shay.etenapptest.ToonFavorieten"
-        />
+            />
 
         <!-- Zoek Gerechten Activiteit -->
         <activity
             android:name="com.example.shay.etenapptest.ZoekGerechten"
-        />
+            />
 
         <!-- Shuffle Pagina Activiteit -->
         <activity
             android:name="com.example.shay.etenapptest.ShufflePagina"
-        />
+            />
 
         <!-- Detail Pagina Activiteit -->
         <activity

@@ -3,7 +3,122 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44336">
+    android:background="#F44336"
+    android:id="@+id/gerecht_toevoegen_scherm"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerechtnaam"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textView" />
+
+
+    <!-- Favorieten knop -->
+    <ImageButton
+        android:contentDescription="@string/favorite_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/favorieten_knop"
+
+        android:background="@drawable/favoriet_selector"
+        android:scaleType="fitCenter"
+        android:onClick="addFavorite"
+        android:clickable="true"
+
+        android:layout_marginTop="2dp"
+        android:paddingLeft="200dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+
+
+
+
+    <!-- witte balk -->
+    <View android:layout_height="1dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="fill_parent"
+        android:background="#FFFFFF"
+        android:layout_alignBottom="@+id/gerecht_toevoegen_ondertitel"
+        android:id="@+id/fillerbar"
+        />
+
+    <!-- Categorieen -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categorieën"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/fillerbar"
+
+
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textIsSelectable="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <!-- ingrediënt input veld -->
+
+
+    <!-- witte balk -->
+    <View android:layout_height="1dp"
+        android:layout_marginTop="250dp"
+        android:layout_width="fill_parent"
+        android:background="#FFFFFF"
+        android:id="@+id/fillerbar2"
+        />
+
+    <!-- Categorieen -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingredienten"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/fillerbar2"
+
+
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textIsSelectable="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <!-- witte balk -->
+    <View android:layout_height="1dp"
+        android:layout_marginTop="400dp"
+        android:layout_width="fill_parent"
+        android:background="#FFFFFF"
+        android:id="@+id/fillerbar3"
+        />
+
+    <!-- omschrijving input veld -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Omschrijving"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/fillerbar3"
+
+
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textIsSelectable="true"
+        android:layout_centerHorizontal="true"
+        />
+
 
 
 

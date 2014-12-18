@@ -27,7 +27,9 @@
         android:layout_below="@+id/favorieten_title"
         android:id="@android:id/list"
         android:layout_marginTop="5dp"
-        android:textSize="15sp"
-    />
+        android:textSize="17sp"
+        android:stackFromBottom="false"
+        android:smoothScrollbar="true"
+        android:scrollingCache="false" />
 
 </RelativeLayout>
