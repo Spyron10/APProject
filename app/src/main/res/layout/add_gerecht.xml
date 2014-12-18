@@ -130,13 +130,14 @@
         android:layout_toEndOf="@+id/favorieten_text"
         android:layout_toRightOf="@+id/favorieten_text"
         android:layout_below="@id/omschrijvinggerecht"
-        android:src="@drawable/favoriet_selector"
-        android:background="@null"
+
+        android:background="@drawable/favoriet_selector"
         android:scaleType="fitCenter"
         android:onClick="addFavorite"
         android:paddingEnd="2dp"
         android:paddingRight="2dp"
         android:paddingBottom="2dp"
+        android:clickable="true"
     />
 
     <!-- gerecht toevoegen knop -->
