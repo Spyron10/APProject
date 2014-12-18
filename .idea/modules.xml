@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APProject.iml" filepath="$PROJECT_DIR$/APProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EtenAppTest.iml" filepath="$PROJECT_DIR$/EtenAppTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
